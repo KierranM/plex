@@ -1,3 +1,3 @@
 #!/bin/bash
 
-exec /sbin/setuser plex /usr/sbin/start_pms
+exec /sbin/setuser root /usr/sbin/start_pms
