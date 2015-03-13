@@ -21,6 +21,9 @@ VOLUME /photos
 VOLUME /videos
 VOLUME /config
 
+#copy across the default plex configuration
+ADD Assets/plexmediaserver /etc/default/plexmediaserver
+
 # Set up the init script
 RUN mkdir -p /etc/my_init.d
 ADD Assets/config.sh /etc/my_init.d/config.sh
